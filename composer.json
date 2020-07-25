@@ -1,0 +1,41 @@
+{
+    "name": "adiliogobira/lifeapps-integration",
+    "description": "Para usuários de Laravel e clientes da LifeApps, esta lib facilita as requisições RESTFULL na aplicação.",
+    "keywords": [
+        "LifeApps",
+        "Laravel",
+        "e-commerce"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adilio Gobira",
+            "email": "adiliogobira@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-curl": "*",
+        "ext-json": "*",
+        "php": "^7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lifeapps\\Integra\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "Lifeapps": {
+            "providers": [
+                "Lifeapps\\src\\LifeAppsServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
